@@ -1,5 +1,5 @@
 # Docker-Container-Hardening-Baseline
-This project focused on reducing the impact of container compromise through least privilege, runtime isolation, and defensive security controls.
+This project focused on reducing the impact of container compromise through _**least privilege, runtime isolation, and defensive security controls**_.
 
 # Scope and Assumptions
 
@@ -13,3 +13,10 @@ This project focused on reducing the impact of container compromise through leas
 
 - Kubernetes environments (handled through PodSecurity, SecurityContext, etc.)
 - Host operating system hardening (assumed to be done separately)
+
+# Security goals
+
+- **Prevent container-to-host escape**
+- **Prevent privilege escalation inside the container**
+- **Limit lateral movement between containers**
+- **Reduce attacker persistence after exploitation**

@@ -21,4 +21,24 @@ I implemented the container security hardening baseline, focused on reducing the
 - **Limit lateral movement between containers**
 - **Reduce attacker persistence after exploitation**
 
+
+# Minimal Base Images
+Use minimal, well-maintained base images:
+- ubuntu 
+- distroless
+- alpine (with caution)
+
+**I have choose ubuntu as my base image**
+***
+<div align="center">
+  <img src="doc/screenshot/p1.png" alt="project" width="1200">
+</div>
+
+***
+<div align="center">
+  <img src="doc/screenshot/p2.png" alt="project" width="1200">
+</div>
+
+***
+
 🚧 _**Work in Progress**_

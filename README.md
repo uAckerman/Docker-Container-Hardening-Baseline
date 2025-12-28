@@ -20,3 +20,5 @@ I implemented the container security hardening baseline, focused on reducing the
 - **Prevent privilege escalation inside the container**
 - **Limit lateral movement between containers**
 - **Reduce attacker persistence after exploitation**
+
+🚧 _**Work in Progress**_

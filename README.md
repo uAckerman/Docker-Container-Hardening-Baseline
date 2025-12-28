@@ -45,10 +45,10 @@ Use minimal, well-maintained base images:
 # Container Security 
 # Image Build-Time Hardening ([View Dockerfile](https://github.com/uAckerman/Docker-Container-Hardening-Baseline/blob/main/Dockerfile))
 
-## Non-Root Execution
-- **All containers must run as a non-root user which will prevent privilege escalation via kernel or Docker runtime misconfigurations.**
+## Running Docker Containers with an Unprivileged User
+- **All containers must run as a non-root user which will prevent privilege escalation via kernel or Docker runtime misconfigurations.**  
 
-> RUN groupadd -r appuser && useradd -r -g appuser appuser
+> **RUN groupadd -r test && useradd -r -g test uzair**  
 
 
 
@@ -65,6 +65,29 @@ Use minimal, well-maintained base images:
 </div>
 
 ***
+<div align="center">
+  <img src="doc/screenshot/p6.png" alt="project" width="1200">
+</div>
 
+***
+
+## Disabling the Docker Container “root” User
+- **can disable the “root” user by changing the default shell from /bin/bash to /usr/sbin/nologin. This prevents any user on the container from accessing the “root” account irregardless of whether they have the “root” password.**  
+
+> **RUN chsh -s /usr/sbin/nologin root**  
+
+- **Build the image again and run the build image with new control to check the access.**
+
+***
+<div align="center">
+  <img src="doc/screenshot/p7.png" alt="project" width="1200">
+</div>
+
+***
+<div align="center">
+  <img src="doc/screenshot/p8.png" alt="project" width="1200">
+</div>
+
+***
 
 🚧 _**Work in Progress**_

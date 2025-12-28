@@ -1,5 +1,5 @@
 # Docker-Container-Hardening-Baseline
-I implemented the container security baseline, focused on reducing the impact of container compromise through _**least privilege, runtime isolation, and defensive security controls**_.
+I implemented the container security hardening baseline, focused on reducing the impact of container compromise through _**least privilege, runtime isolation, and defensive security controls**_.
 
 # Scope and Assumptions
 

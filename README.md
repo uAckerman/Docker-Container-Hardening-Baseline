@@ -89,5 +89,3 @@ Use minimal, well-maintained base images:
 </div>
 
 ***
-
-🚧 _**Work in Progress**_
